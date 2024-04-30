@@ -1,0 +1,77 @@
+<!-- Navbar Section -->
+<section class="hero ">
+  <section class="nav-bar">
+    <nav class="navbar navbar-expand-lg   container">
+        <a class="navbar-brand logo "  href="#" ><img src="assets/images/Logo.webp"class="LogoImg" alt=""></a>
+        <button _ngcontent-ng-c4172985499=""
+        type="button" data-bs-toggle="collapse"
+        data-bs-target="#collapsibleNavId"
+        (click)="toggleNavbar()"
+        aria-controls="collapsibleNavId"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        class="navbar-toggler d-lg-none collapsed">
+        <span _ngcontent-ng-c4172985499="" class="navbar-toggler-icon">
+        </span></button>
+
+        <div class="collapse navbar-collapse " id="navbarSupportedContent"  [style.display]="navbarOpen ? 'flex' : 'none'">
+          <ul class="navbar-nav mx-auto justify">
+            <li class="nav-item">
+              <a class="nav-link" href="#Features" routerLink="">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about-us"  >About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#products" >Our Products</a>
+              </li>
+
+              <li class="nav-item" >
+                <a class="nav-link" href="#ContactUs" >Contact Us</a>
+              </li>
+              <li class="nav-item" >
+                <a class="nav-link" routerLink="checkout" >Check Out </a>
+              </li>
+          </ul>
+          <!-- <ul class="mt-2">
+            <li class="logo"> -->
+
+            <!-- </li>
+          </ul> -->
+
+        </div>
+
+      </nav>
+
+</section>
+  <!--  -->
+<div class="body">
+  <h2 class="h1">Furniture <span class="dark-blue">vision</span></h2>
+  <h4 class="dark-blue">For better <span class="dark-grey">experience</span></h4>
+  <button class="btn-main">Start Shopping</button>
+</div>
+</section>
+<!-- features section -->
+<section id="features" class="features overflow-hidden">
+<app-features></app-features>
+</section>
+<!-- hero section -->
+<section>
+  <app-hero></app-hero>
+</section>
+<!-- about section -->
+<section id="about-us">
+    <app-about-us></app-about-us>
+</section>
+     <!-- products section -->
+<section id="products">
+    <app-products></app-products>
+</section>
+<!-- contact-us section -->
+<section  id="ContactUs">
+<app-contact-us></app-contact-us>
+</section>
+ <!-- footer section -->
+ <section  id="footer">
+  <app-footer></app-footer>
+</section>

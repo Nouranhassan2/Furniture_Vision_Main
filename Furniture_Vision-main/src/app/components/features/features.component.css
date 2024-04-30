@@ -1,0 +1,25 @@
+/* features section */
+.w-90{
+  width: 90%;
+}
+.w-70{
+  width: 70%;
+}
+@media (max-width:991px) {
+.header{
+  width: fit-content;
+  text-align: center;
+  margin-inline: auto;
+}
+.body-text{
+  width: fit-content;
+  text-align: center;
+  margin-inline: auto;
+  text-align: center;
+ }
+}
+@media (min-width:1500px) {
+.column{
+  padding-left: 6.2rem;
+}
+}

@@ -1,0 +1,62 @@
+<section class="products mt-5">
+  <!--  -->
+  <!-- <div class="row">
+  <div *ngFor="let product of products" class="col-lg-3">
+    <div class="card">
+      <img [src]="product.imageLink" alt="{{ product.productName }}" class="card-img-top">
+    </div>
+  </div>
+  </div> -->
+  <app-modal [isVisible]="modalVisible" [selectedProduct]="selectedProduct" *ngIf="modalVisible" (closeEvent)="handleModalClose()"></app-modal>
+  
+  <!--  -->
+    <div class="container w-80">
+      <div class="special-heading text-center">
+        <h2 class="my-5 fw-bold">Our Products</h2>
+      </div>
+  
+      <!-- Category Buttons -->
+      <div class="buttons text-center mb-4">
+        <button class="btn btn-main mx-1 my-1" *ngFor="let category of ['Executive Office', 'Manager Office', 'Employees Office', 'Workstation', 'Cabinet', 'Mesh Chair', 'Leather Chairs', 'Reception', 'Sofa', 'Meeting Table' ,'Control Table']" (click)="selectCategory(category)">
+          {{ category }}
+        </button>
+      </div>
+  
+      <!-- Filter Dropdown - Visible only if a category has been selected -->
+      <div class="filter-section text-end" *ngIf="filterVisible">
+        <select #filterSelect class="btn btn-second" (change)="applyFilter(filterSelect.value)">
+          <option value="" disabled selected>Filter by:</option>
+          <option value="By Order">By Order</option>
+          <option value="Made in Saudi">Made in Saudi</option>
+        </select>
+      </div>
+  
+      <!-- Product Display -->
+      <div >
+        <!-- Conditional rendering based on whether filters are applied -->
+        <div *ngIf="filteredProducts.length > 0; else showAll" class="row gy-4 mt-4">
+          <div *ngFor="let product of filteredProducts" class="col-lg-3">
+            <div class="card "  (click)="showProductModal(product)"
+            >
+              <img [src]="product.imageLink" alt="{{ product.productName }}" class="card-img-top w-100 rounded-3 h-200 object-fit-cover overflow-hidden">
+  
+            </div>
+          </div>
+        </div>
+        <ng-template #showAll class="row">
+          <div class="row gy-4 mt-4">
+  
+          <div *ngFor="let product of products" class="col-lg-3">
+            <div class="card "  (click)="showProductModal(product)"
+            >
+              <img [src]="product.imageLink" alt="{{ product.productName }}" class="card-img-top w-100 rounded-3 h-200 object-fit-cover">
+  
+            </div>
+          </div>
+  
+          </div>
+        </ng-template>
+      </div>
+      </div>
+  </section>
+

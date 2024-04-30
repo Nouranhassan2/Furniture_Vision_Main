@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css';
+/* Include Tailwind CSS here if you prefer to use it */
+.w-85{
+  width: 85%;
+}
+.w-fit{
+  width: fit-content;
+}
+body {
+    font-family: "Rubik", sans-serif;
+  }
+  
+  .h-1 {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+  }
+  
+  .h-2 {
+    font-size: 30px;
+    font-style: normal;
+  }
+  
+  .h-4 {
+    font-size: 20px;
+    opacity: 0.6;
+  }
+  .w-80{
+    width: 80%;
+  }

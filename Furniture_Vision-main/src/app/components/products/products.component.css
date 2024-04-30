@@ -1,0 +1,37 @@
+.active {
+    background-color: #001f34;
+    color: white;
+  }
+  .h-200{
+    height: 270px;
+  }
+  .btn-main {
+    --bs-btn-color: #001f34;
+    --bs-btn-bg: #fff;
+    --bs-btn-border-color: #001f34;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #001f34;
+    --bs-btn-hover-border-color: #001f34;
+    font-size: 24px;
+    font-weight: 500;
+    border-radius: 24px;
+    margin: 10px 11px;
+    padding: 8px 24px;
+      }
+      .btn-second {
+        --bs-btn-color: #001f34;
+        --bs-btn-bg: #fff;
+        --bs-btn-border-color: #001f34;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: #001f34;
+        --bs-btn-hover-border-color: #001f34;
+        font-size: 24px;
+        font-weight: 500;
+        border-radius: 5px;
+        margin: 10px 11px;
+        padding: 8px 24px;
+          }
+
+          img{
+            cursor: pointer;
+          }

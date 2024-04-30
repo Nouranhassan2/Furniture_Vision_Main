@@ -1,0 +1,11 @@
+/* aboout section */
+.py-7{
+    padding-block: 7rem;
+}
+
+.about{
+    background-image: url('/assets/images/About us pattern.webp');
+}
+.home .h3{
+    color: #fff;
+}

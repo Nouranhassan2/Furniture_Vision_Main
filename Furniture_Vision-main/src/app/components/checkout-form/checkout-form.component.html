@@ -1,0 +1,44 @@
+<app-navbar></app-navbar>
+<section class="checkout-form">
+  <h1 class="mb-3 mt-5 h-1 text-center">Check out your order</h1>
+  <div class="container mt-5">
+    <div class="row row-r">
+      <div class="col-md-7 order-md-1">
+        <h2 class="mt-4 h-2">Fill your information</h2>
+        <h4 class="h-4 mb-4">We will receive an E-mail with your order</h4>
+        <form class="needs-validation" (ngSubmit)="onSubmit(checkoutForm)" #checkoutForm="ngForm" novalidate>
+          <div class="mb-3">
+            <label for="name" class="fw-bold input-font mb-1">Name</label>
+            <input type="text" class="form-control border-2" id="name" [(ngModel)]="order.name" placeholder="Name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="fw-bold input-font mb-1">Email</label>
+            <input type="email" class="form-control border-2" id="email" [(ngModel)]="order.email" placeholder="Email" required name="email">
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="fw-bold input-font mb-1">Phone Number</label>
+            <input type="tel" class="form-control border-2" id="phone" [(ngModel)]="order.phone" placeholder="Phone Number" name="phone" required>
+          </div>
+          <div class="mb-3">
+            <label for="itemsCode" class="fw-bold input-font mb-1">Items code</label>
+            <input type="text" class="form-control border-2" id="itemsCode" [(ngModel)]="order.itemsCode"  placeholder="Items Code" name="itemsCode" required>
+          </div>
+          <div class="row justify-content-center mt-5">
+            <div class="col-auto">
+              <button class="text-white btn-lg rounded-4 text-center btn-submit pointer" [disabled]="!checkoutForm.form.valid" [ngClass]="{'disabled-btn': checkoutForm.invalid}" 
+              type="submit">
+                Send the order
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-5 d-flex justify-content-center align-items-center">
+        <app-cart></app-cart>
+      </div>
+    </div>
+  </div>
+</section>
+<app-footer></app-footer>
+
+

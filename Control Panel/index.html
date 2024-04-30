@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Panel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Product Control Panel</h1>
+
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">Add a New Product</h5>
+                <form id="addProductForm">
+                    <div class="mb-3">
+                        <label for="productName" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" id="productName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="category" class="form-label">Category</label>
+                        <input type="text" class="form-control" id="category" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="filter" class="form-label">Filter</label>
+                        <input type="text" class="form-control" id="filter" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="imageLink" class="form-label">Image Link</label>
+                        <input type="text" class="form-control" id="imageLink" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Product</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Similarly, add forms for Update and Delete -->
+        <div class="card mt-3">
+            <div class="card-body">
+                <h5 class="card-title">Update a Product</h5>
+                <form id="updateProductForm">
+                    <div class="mb-3">
+                        <label for="updateProductID" class="form-label">Product ID</label>
+                        <input type="number" class="form-control" id="updateProductID" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="updateProductName" class="form-label">Product Name</label>
+                        <input type="text" class="form-control" id="updateProductName" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="updateCategory" class="form-label">Category</label>
+                        <input type="text" class="form-control" id="updateCategory" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="updateFilter" class="form-label">Filter</label>
+                        <input type="text" class="form-control" id="updateFilter" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="updateImageLink" class="form-label">Image Link</label>
+                        <input type="text" class="form-control" id="updateImageLink" required>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Update Product</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card mt-3 mb-5">
+            <div class="card-body">
+                <h5 class="card-title">Delete a Product</h5>
+                <form id="deleteProductForm">
+                    <div class="mb-3">
+                        <label for="deleteProductID" class="form-label">Product ID</label>
+                        <input type="number" class="form-control" id="deleteProductID" required>
+                    </div>
+                    <button type="submit" class="btn btn-danger">Delete Product</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

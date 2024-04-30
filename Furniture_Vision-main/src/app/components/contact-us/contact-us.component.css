@@ -1,0 +1,62 @@
+/* contact section */
+.label{
+  font-family: 'Roboto', sans-serif;
+}
+
+input::placeholder {
+  font-weight: bold;
+}
+
+textarea::placeholder {
+  font-weight: bold;
+}
+
+.contact-section {
+    width: 85%;
+    margin: 2rem auto;
+    padding: 2rem;
+  }
+
+  .contact-section h2 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-info {
+    margin-bottom: 1rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  .label{
+    font-weight: 600;
+    font-size: 20px;
+  }
+  .contact-info[_ngcontent-ng-c1138548119] h3[_ngcontent-ng-c1138548119] {
+    font-size: 2.25rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+.collapse:not(.show) {
+    display: none;
+    padding-block: 10px;
+    margin-top: 26px;
+}
+.nav-link[_ngcontent-ng-c329359968] {
+    display: block;
+    font-size: 21px;
+    padding-block: 5px 25px;
+}
+.btn-main {
+    color: #fff;
+    background-color: #001f34;
+    padding: 12px 25px;
+    margin-top: 15px;
+    width: -moz-fit-content;
+    width: fit-content;
+    font-size: 18px;
+    border-radius: 25px;
+}

@@ -1,0 +1,84 @@
+/* .w-90{
+    width: 90%;
+}
+  
+  form div {
+    margin-bottom: 0.5rem;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.3rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="text"]:hover,
+  input[type="email"]:hover,
+  input[type="tel"]:hover,
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="tel"]:focus {
+    border-color: #90cdf4;
+  }
+  
+  button[type="submit"] {
+    display: block;
+    margin-inline: auto;
+    text-align: center;
+    padding: 1rem 3.1rem;
+    border: none;
+    background-color: #5a67d8;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+  
+  
+  button[type="submit"]:hover,
+  button[type="submit"]:focus {
+    background-color: #434190;
+  }
+  
+  button[type="submit"]:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
+  }
+   */
+   .btn-submit {
+    font-size: 20px;
+    background-color: #001F34;
+    font-family: "Roboto", sans-serif;
+    font-weight: bolder;
+    padding: 10px 40px;
+  }
+  
+  .input-font {
+    font-size: 16px;
+    font-family: "Roboto", sans-serif;
+  }
+  .checkout-form {
+    font-family: "Rubik", sans-serif;
+  }
+  
+ .row-r{
+  display: flex;
+  flex-direction: row-reverse;
+ }
+ .pointer{
+  cursor: pointer;
+ }
+ .disabled-btn {
+  opacity: 0.5; /* Reduce opacity for disabled effect */
+  cursor: not-allowed; /* Change cursor to not-allowed */
+  /* Add any other styles you want for the disabled button */
+}

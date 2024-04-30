@@ -1,0 +1,23 @@
+.nav-link {
+    font-family: "Roboto", sans-serif;
+    color: #001F34;
+    opacity: 0.9;
+  }
+  
+  .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #001F34;
+    transition: ease-in-out;
+    color: #001F34;
+    transition: width 0.5s ease-in-out;
+  }
+  @media (max-width: 991px){
+.navbar-nav[_ngcontent-ng-c2540533267] {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 5px;
+    /* justify-content: end; */
+    /* align-content: end; */
+    align-items: end;
+}}
