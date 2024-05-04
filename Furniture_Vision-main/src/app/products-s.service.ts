@@ -8,7 +8,7 @@ import { ApiResponse } from './api-response';
   providedIn: 'root'
 })
 export class ProductsSService {
-  private baseUrl = 'http://127.0.0.1:5000/products';
+  private baseUrl = 'https://future-vision.asia:4000/products';
 
   constructor(private http: HttpClient) {}
 

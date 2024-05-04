@@ -1,30 +1,38 @@
-<!-- <div class="modal-backdrop " *ngIf="isVisible" >
-    <div class="modal-content d-flex flex-column align-items-center jusify-content-center w-fit">
-      <div class="modal-header">
-        <h5 class="modal-title">{{ selectedProduct?.productName }}</h5>
-        <button type="button" class="close" (click)="close()">×</button>
-      </div>
-      <div class="modal-body w-50">
-        <img [src]="selectedProduct?.imageLink" alt="{{ selectedProduct?.productName }}" class=" w-100">
-        <p class="code">{{ selectedProduct?.productName }}</p>
-      </div>
-      <div class="modal-footer d-flex jusify-content-between">
-         <h5 class="me-4">By Order</h5>   
-         <button type="button" class="btn btn-primary ms-4">Add to Cart</button>
-      </div>
-    </div>
-  </div> -->
-  <div class="modal-backdrop " *ngIf="isVisible" >
-    <div class="modal-content d-flex flex-column  w-40">
-        <button type="button" class="close " (click)="close()">×</button>
-      
-        <img [src]="selectedProduct?.imageLink" alt="{{ selectedProduct?.productName }}" class=" w-100">
-        <h5 class="modal-title mt-5 ps-5">{{ selectedProduct?.productName }}</h5>
-        <p class="code text-muted ps-5">{{ selectedProduct?.productID }}</p>
+<div class="modal-backdrop " *ngIf="isVisible" >
+  <div class="modal-content d-flex flex-column  w-40">
+    <button type="button" class="close " (click)="close()">×</button>
+  
+    <img [src]="selectedProduct?.imageLink" alt="{{ selectedProduct?.productName }}" class=" w-100">
+    <h5 class="modal-title mt-5 ps-5">{{ selectedProduct?.productName }}</h5>
+    <p class="code text-muted ps-5">{{ selectedProduct?.productID }}</p>
 
-      <div class="modal-f d-flex jusify-content-between ps-5 mb-5 w-100 ">
-         <h5 class="me-4">By Order</h5>   
-         <button type="button" class="btn btn-main ms-4 text-start me-4" (click)="addToCart()" routerLink="/checkout">Add to Cart</button>
-      </div>
+    <div class="modal-f d-flex jusify-content-between ps-5  w-100">
+      <h5 class="me-4">By Order</h5> 
+      <button class="CartBtn me-4 d-flex justify-content-center align-items-center"    [disabled]="addedToCart" 
+      (click)="addToCart()">
+  
+        <span class="IconContainer"> 
+          <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"  fill="white" class="cart text-white"><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"></path></svg>
+        </span>
+        <p class="text pt-3">{{ addToCartButtonText }}</p>
+      </button>  
+  
     </div>
+    <a href="/checkout" class="text-end pe-5 mb-5">View Checkout</a>
+
   </div>
+</div>
+
+
+
+
+
+  <!-- routerLink="/checkout" -->
+
+
+
+  <!--     <button type="button" class="btn btn-main ms-4 mb-3 text-start me-4" 
+              [disabled]="addedToCart" 
+              (click)="addToCart()" >
+        {{ addToCartButtonText }}
+      </button> -->

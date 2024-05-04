@@ -19,7 +19,7 @@ export class ContactUsComponent {
 
   onSubmit(): void {
     if (this.contactForm.valid) {
-      this.http.post('http://127.0.0.1:5000/contact_us', this.contactForm.value).subscribe(
+      this.http.post('https://future-vision.asia:4000/contact_us', this.contactForm.value).subscribe(
         response => alert('Message sent successfully'),
         error => alert('Error occurred while sending message')
       );

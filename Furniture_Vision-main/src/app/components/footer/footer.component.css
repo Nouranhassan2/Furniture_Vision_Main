@@ -20,4 +20,15 @@
   .p-font-footer {
     font-family: "Rubik", sans-serif;
   }
-  
+  .social-icons{
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+    width: fit-content;
+  }
+  @media (max-width:991px) {
+    .social-icons{
+     color: white;      
+    }
+
+  }
